@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Rock Paper Scissors</title>
-</head>
-
-<body>
-    
-</body>
-<script src="script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: radial-gradient(
+          circle farthest-corner at 10% 20%,
+          rgba(90, 92, 106, 1) 0%,
+          rgba(32, 45, 58, 1) 81.3%
+        );
+      }
+    </style>
+    <div class="container mt-3">
+      <div
+        class="d-flex justify-content-center bg-dark border aligns-items-center mb-2"
+      >
+        <h2 class="display-1 text-white">MY ROCK PAPER SCISSORS</h2>
+      </div>
+      <div class="d-flex align-items-center flex-column">
+        <button
+          class="btn btn-lg btn-light text-bg-danger mb-2"
+          id="btn1"
+          onclick="game()"
+        >
+          Rock
+        </button>
+        <button
+          class="btn btn-lg btn-light text-bg-success mb-2"
+          id="btn2"
+          onclick="game()"
+        >
+          Paper
+        </button>
+        <button
+          class="btn btn-lg btn text-bg-info text-light mb-2"
+          id="btn3"
+          onclick="game()"
+        >
+          Scissors
+        </button>
+      </div>
+      <div class="d-flex justify-content-center">
+        <h3 class="display-1 text-info">Score: 0</h3>
+      </div>
+      <div class="results d-flex justify-content-center text-danger"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
